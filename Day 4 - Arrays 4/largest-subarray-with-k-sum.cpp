@@ -4,14 +4,11 @@ public:
   int maxLen(vector<int> &A, int n)
   {
     int maxi = 0;
-    for (int i = 0; i < n; i++)
-    {
-      for (int j = i; j < n; j++)
-      {
+    for (int i = 0; i < n; i++) {
+      for (int j = i; j < n; j++) {
         int sum = 0;
         int len = 0;
-        for (int k = i; k <= j; k++)
-        {
+        for (int k = i; k <= j; k++) {
           sum += A[k];
           len++;
         }
